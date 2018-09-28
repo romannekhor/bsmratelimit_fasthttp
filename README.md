@@ -30,7 +30,7 @@ func main() {
 	// Create a limiter struct.
 	limiter := ratelimit.New(5000, time.Second)
 	statusCode := fasthttp.StatusTooManyRequests
-	fasthttp.ListenAndServe(":4444", bsmratelimit_fasthttp.LimitHandler(requestHandler, limiter, statusCode))
+	fasthttp.ListenAndServe(":4444", bsmratelimit_fasthttp.SimpleLimitHandler(requestHandler, limiter, statusCode))
 
 }
 

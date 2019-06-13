@@ -12,9 +12,9 @@ package main
 
 import (
 	"github.com/valyala/fasthttp"
-    "github.com/bsm/ratelimit"
+	"github.com/bsm/ratelimit"
 	"time"
-	"github.com/sviterok/bsmratelimit_fasthttp"
+	"github.com/romannekhor/bsmratelimit_fasthttp"
 )
 
 func main() {
